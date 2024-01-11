@@ -5,22 +5,123 @@
   box-sizing: border-box;
 }
 
-#result-container {
+body {
+  font-family: poppins;
+}
+
+body {
+  background: rgb(157, 157, 157);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  color: #ffff;
+}
+
+.hide {
   display: none;
 }
 
 .container {
   display: flex;
   justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  height: 400px;
+  width: 400px;
+  background: rgb(61, 61, 61);
+  border-radius: 8px;
+  box-shadow: 3px 3px 10px rgb(0, 0, 0);
 }
 
 #calc-container {
-  justify-content: center;
   align-items: center;
   display: flex;
+  justify-content: center;
   flex-direction: column;
-  background: #faa;
-  height: 20rem;
-  width: 30rem;
+  margin-bottom: 20px;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-control input {
+  border-radius: 4px;
+  border: none;
+  height: 50px;
+  width: 350px;
+  padding: 10px;
+}
+
+.form-control label {
+  margin: 10px 0px 10px 0px;
+}
+
+.submit-btn {
+  margin: 40px 0px 0px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.submit-btn button {
+  cursor: pointer;
+  color: #ffff;
+  background: rgb(120, 120, 120);
+  height: 50px;
+  width: 170px;
+  font-family: poppins;
+  font-size: 1rem;
+  font-weight: 400;
+  border-radius: 4px;
+  border: none;
+}
+
+.submit-btn #calc-btn {
+  background: rgb(255, 123, 0);
+}
+
+#result-container {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#clear-btn {
+  font-size: 1.1rem;
+  background: rgb(255, 123, 0);
+} 
+
+span {
+  color: rgb(255, 123, 0);
+}
+
+#bmi-number {
+  font-weight: 400;
+  font-size: 2.4rem;
+}
+
+#bmi-info {
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.bmi-table  {
+  margin: 20px 0px 20px 0px;
+  align-items: center;
+  display: flex;
+}
+
+.bmi-table h4 {
+  margin: 0px 10px 0px 10px;
+}
+
+.table-info {
+  display: flex;
 }
