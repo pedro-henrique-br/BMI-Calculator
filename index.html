@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/main.js" defer></script>
+  <title>BMI Calculator</title>
+</head>
+<body>
+
+    <div class="container">
+      <div id="calc-container">
+      <div id="calc-title"><h1>Calculate your BMI</h1></div>
+          <form id="bmi-form">
+          <div class="form-control">
+            <label name="height" for="height">Height:</label>
+            <input id="height-input" type="text" placeholder="Your height in cm">
+          </div>
+          <div class="form-control">
+            <label name="weight" for="weight">Weight:</label>
+            <input id="weight-input" type="text" placeholder="Your weight in kg">
+          </div>
+          <div class="submit-btn">
+            <button id="calc-btn">Calculate</button>
+            <button id="reset-btn">Reset</button>
+          </div>
+        </div>
+      </form>
+      <div id="result-container">
+        <p id="bmi-number">Your BMI:<span id="bmi-result"></span>26.1</span></></>
+        <p id="bmi-info">Your current situation:<span>Obesity</span></p>
+        <h3>Check weight classifications</h3>
+        <div class="bmi-table">
+          <h4>IBM</h4>
+          <h4>classification</h4>
+          <h4>Obesity</h4>
+        <div class="table-info">
+          <p>17.5</p>
+          <p>thinness</p>
+          <p>0</p>
+        </div> 
+        </div>
+      </div>
+    </div>
+  
+</body>
+</html>

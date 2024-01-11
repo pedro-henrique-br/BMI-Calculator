@@ -1,0 +1,26 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#result-container {
+  display: none;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#calc-container {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background: #faa;
+  height: 20rem;
+  width: 30rem;
+}
