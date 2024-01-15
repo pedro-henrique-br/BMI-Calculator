@@ -1,6 +1,6 @@
 # BMI-Calculator
 
-<h1>Body mass index calculator using js</h1>
+<h3>Body mass index calculator using js</h3>
 
 <a>https://bmi-calculator-two-blush.vercel.app/</a>
 
