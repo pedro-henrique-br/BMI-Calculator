@@ -18,11 +18,10 @@ body {
   color: #ffff;
 }
 
-.hide {
-  display: none;
-}
+/* animação */
 
 .container {
+  transition: 0.3s;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -42,6 +41,8 @@ body {
 }
 
 .form-control {
+  align-items: center;
+  justify-content: center;
   display: flex;
   flex-direction: column;
 }
@@ -59,7 +60,6 @@ body {
 }
 
 .submit-btn {
-  margin: 40px 0px 0px 0px;
   display: flex;
   justify-content: space-between;
 }
@@ -75,18 +75,15 @@ body {
   font-weight: 400;
   border-radius: 4px;
   border: none;
+  margin-right: 10px;
+  margin-left: 0px;
 }
 
 .submit-btn #calc-btn {
   background: rgb(255, 123, 0);
 }
 
-#result-container {
-  justify-content: center;
-  flex-direction: column;
-  display: flex;
-  align-items: center;
-}
+/* Result container */
 
 #clear-btn {
   align-items: center;
@@ -108,7 +105,7 @@ span {
 
 #bmi-number {
   font-weight: 400;
-  font-size: 2.4rem;
+  font-size: 2.2rem;
 }
 
 #bmi-info {
@@ -116,27 +113,76 @@ span {
   font-size: 1rem;
 }
 
-.table-header h4 {
-  font-size: 1.2rem;
+#classification {
+  margin-top: 10px;
+}
+
+h4 {
+  font-size: 1.1rem;
   font-weight: 600;
 }
 
-.table-header  {
-  border-bottom: solid 1px #ffffff2f;
-  justify-content: space-around;
+#result-container {
+  max-height: 400px;
+  text-align: center;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bmi-table {
+  margin-top: 20px;
+}
+
+.table-header,
+.table-info {
   display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: solid 1px #505050;
 }
 
-.table-data {
-  border-bottom: solid 1px #ffffff2f;
+.table-info p, .bmi-table h4 {
+  flex: 1;
 }
 
-.table-data p {
-  margin: 5px 0px 5px 0px;
-  font-size: 0.8rem;
-}
-
-.info {
-  justify-content: space-around;
+.submit-btn {
+  margin-top: 20px;
   display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.table-info p {
+  font-size: 0.9rem;
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    width: 340px;
+  }
+  #result-container h4  {
+    font-size: 0.9rem;
+  }
+  #result-container p  {
+    font-size: 0.6rem;
+  }
+  #clear-btn {
+    width: 150px;
+    height: 50px;
+  }
+
+  .form-control input {
+    width: 300px;
+  }
+
+  .submit-btn {
+    align-items: center;
+  }
+
+  .submit-btn button {
+    margin: 0px 10px ;
+    width: 140px;
+  }
 }
