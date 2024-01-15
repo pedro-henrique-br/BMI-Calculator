@@ -82,19 +82,28 @@ body {
 }
 
 #result-container {
+  justify-content: center;
   flex-direction: column;
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 
 #clear-btn {
+  align-items: center;
+  justify-content: center;
   font-size: 1.1rem;
   background: rgb(255, 123, 0);
 } 
 
 span {
   color: rgb(255, 123, 0);
+}
+
+#bmi-table {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 #bmi-number {
@@ -107,21 +116,27 @@ span {
   font-size: 1rem;
 }
 
-h4 {
+.table-header h4 {
   font-size: 1.2rem;
   font-weight: 600;
 }
 
-.bmi-table  {
-  margin: 20px 0px 20px 0px;
-  align-items: center;
+.table-header  {
+  border-bottom: solid 1px #ffffff2f;
+  justify-content: space-around;
   display: flex;
 }
 
-.bmi-table h4 {
-  margin: 0px 10px 0px 10px;
+.table-data {
+  border-bottom: solid 1px #ffffff2f;
 }
 
-.table-info {
+.table-data p {
+  margin: 5px 0px 5px 0px;
+  font-size: 0.8rem;
+}
+
+.info {
+  justify-content: space-around;
   display: flex;
 }
